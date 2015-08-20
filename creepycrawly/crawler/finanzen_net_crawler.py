@@ -39,9 +39,6 @@ class FinanzenNetCrawler:
 
 
 
-
-
-
 def crawl(isin):
     resp = requests.get("http://www.finanzen.at/suchergebnisse?_search=" + isin,
                     headers={"content-type": "text",
