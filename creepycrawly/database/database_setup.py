@@ -68,3 +68,4 @@ class DatabaseSetup:
 if __name__ == '__main__':
     setup = DatabaseSetup()
     setup.setupDatabase("all", '../properties.cfg')
+

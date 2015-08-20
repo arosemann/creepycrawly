@@ -27,7 +27,7 @@
 
 <body>
 
-    <div id="wrapper">
+    <div id="wrapper" ng-app="creepycrawly">
 
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
@@ -140,11 +140,11 @@
                         <li>
                             <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
-                        <li>
+                        <li ng-controller="StockController">
                             <a href="#"><i class="fa fa-bell fa-fw"></i> Alerts<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="flot.html">Add new Alert</a>
+                                    <a href="" ng-click="openAddStockModal()">Add new Alert</a>
                                 </li>
                                 <li>
                                     <a href="morris.html">Manage Alerts</a>
@@ -346,6 +346,9 @@
     <script src="/static/js/bootstrap.min.js"></script>
     <script src="/static/js/metisMenu.min.js"></script>
     <script src="/static/js/sb-admin-2.js"></script>
+    <script src="/static/js/angular.min.js"></script>
+    <script src="/static/js/ui-bootstrap-tpls-0.13.3.min.js"></script>
+    <script src="/static/js/creepycrawly.js"></script>
 
 </body>
 

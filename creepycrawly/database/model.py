@@ -35,7 +35,7 @@ class ToStringMixin:
 # Each class represents a database table. In order to generate the database, please use the database_setup.py file.
 
 
-class Share(ToStringMixin, Base):
+class Stock(ToStringMixin, Base):
     __tablename__ = 'share'
     id = Column(BIGINT, Sequence('share_seq'), primary_key=True, nullable=False)
     name = Column('name', String(250))
